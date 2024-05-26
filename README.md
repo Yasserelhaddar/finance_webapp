@@ -4,6 +4,7 @@
 ## Overview
 
 Finance WebApp is a comprehensive tool designed to help users visualize financial data, extract financial filings, and interact with financial documents through a chatbot interface. This application leverages various APIs including Alpha Vantage, EDGAR, and OpenAI to provide users with real-time stock data, news sentiment analysis, and detailed financial filings.
+The repository allows to run TFT training using fetched data from Alpha Vantage API. 
 
 ## Features
 
@@ -61,6 +62,11 @@ Finance WebApp is a comprehensive tool designed to help users visualize financia
 3. **Run the application**
    ```bash
    streamlit run src/app/data/app.py
+   ```
+
+4. **Run training job**
+   ```bash
+   python src/models/train.py
    ```
 
 ## Usage
