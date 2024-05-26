@@ -15,55 +15,53 @@ Finance WebApp is a comprehensive tool designed to help users visualize financia
 
 ## Repository Structure
 
-\`\`\`plaintext
-.
-├── .chroma
-├── assets
-│   └── image.webp
-├── data
-├── filings
-├── lightning_logs/version_0
-├── notebooks
-├── src
-│   ├── app
-│   │   ├── data
-│   │   │   ├── __pycache__
-│   │   │   ├── app.py
-│   │   │   ├── fetch_data.py
-│   │   │   ├── langchain_utils.py
-│   │   │   ├── physical_currency_list.csv
-│   │   │   ├── preprocessor.py
-│   │   │   └── utils.py
-│   ├── models
-│   │   └── train.py
-├── Dockerfile
-├── environment.yaml
-└── requirements.txt
-\`\`\`
+      .
+      ├── .chroma
+      ├── assets
+      │   └── image.webp
+      ├── data
+      ├── filings
+      ├── lightning_logs/version_0
+      ├── notebooks
+      ├── src
+      │   ├── app
+      │   │   ├── data
+      │   │   │   ├── __pycache__
+      │   │   │   ├── app.py
+      │   │   │   ├── fetch_data.py
+      │   │   │   ├── langchain_utils.py
+      │   │   │   ├── physical_currency_list.csv
+      │   │   │   ├── preprocessor.py
+      │   │   │   └── utils.py
+      │   ├── models
+      │   │   └── train.py
+      ├── Dockerfile
+      ├── environment.yaml
+      └── requirements.txt
 
 ## Installation
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone <repository-url>
-   cd <repository-directory>
-   \`\`\`
+   ```bash
+      git clone <repository-url>
+      cd <repository-directory>
+   ```
 
 2. **Set up the environment**
    - Using `conda`:
-     \`\`\`bash
+     ```bash
      conda env create -f environment.yaml
      conda activate <env-name>
-     \`\`\`
+     ```
    - Using `pip`:
-     \`\`\`bash
+     ```bash
      pip install -r requirements.txt
-     \`\`\`
+     ```
 
 3. **Run the application**
-   \`\`\`bash
+   ```bash
    streamlit run src/app/data/app.py
-   \`\`\`
+   ```
 
 ## Usage
 
